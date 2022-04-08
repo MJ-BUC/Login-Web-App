@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<style>
+    body {
+        background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+        color: white;
+        text-align: center;
+        font-size: x-large;
+        font-family:'Roboto',sans-serif;
+        margin: 25px;
+        min-height: 90vh;
+        position: relative;
+    }
+
+    h2 {
+        padding-top: 20%;
+    }
+
+    .back-to-button {
+        background:none;
+        border:none;
+        margin:0;
+        padding:0;
+        cursor: pointer;
+        color: white;
+        text-align: center;
+        font-size: x-small;
+        font-family:'Roboto',sans-serif;
+    }
+
+    .back-to-button:hover {
+        background: none;
+    }
+
+    .back-to-login {
+        margin-bottom: 20%;
+        margin-top: 2.5%;
+    }
+
+    .flow-background {
+        background: rgba(57, 48, 48, 0.3);
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
+
+    form {
+        display: inline-block;
+    }
+
+    input {
+        border-radius: 10px;
+        font-size: 25px;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.2);
+        text-indent: 5px;
+        color: white;
+    }
+
+    input::-webkit-input-placeholder {
+        font-family:'Roboto',sans-serif;
+    }
+
+    button {
+        font-size: 25;
+        display:inline-block;
+        padding:0.6em 2.4em;
+        margin:0 0.3em 0.3em 0;
+        border-radius:10px;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:'Roboto',sans-serif;
+        font-weight:300;
+        color:#FFFFFF;
+        background-color:#4eb5f1;
+        text-align:center;
+        transition: all 0.2s;
+    }
+
+    button:hover {
+        background-color:#4095c6;
+    }
+
+    .login-flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .flow-background {
+        background: rgba(57, 48, 48, 0.3);
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 20px;
+    }
+</style>
+
+<html>
+    <head>
+        <title>Create Account</title>
+    </head>
+    <body>
+        <div class="flow-background">
+            <h2>Create Account</h2>
+            <form class="login-flex" action="/profile" method="POST" > 
+                <input type="text" name="user" id="username" placeholder="Enter username" required>
+                <input type="text" name="pass" id="password" placeholder="Enter password" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="back-to-login">
+                <form action="/loginpage" method="POST">
+                    <button class="back-to-button">Login</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

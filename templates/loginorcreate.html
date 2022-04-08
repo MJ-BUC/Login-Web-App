@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<style>
+    body {
+        background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+        color: white;
+        text-align: center;
+        font-size: x-large;
+        font-family:'Roboto',sans-serif;
+    }
+
+    h2 {
+        padding-top: 20%;
+    }
+
+    form {
+        display: inline-block;
+    }
+
+    button {
+        font-size: 25;
+        display:inline-block;
+        padding:0.6em 2.4em;
+        margin:0 0.3em 0.3em 0;
+        border-radius:10px;
+        box-sizing: border-box;
+        text-decoration:none;
+        font-family:'Roboto',sans-serif;
+        font-weight:300;
+        color:#FFFFFF;
+        background-color:#4eb5f1;
+        text-align:center;
+        transition: all 0.2s;
+    }
+
+    button:hover {
+        background-color:#4095c6;
+    }
+
+</style>
+
+<html>
+    <head>
+        <title>Login or Create Account</title>
+    </head>
+    <body>
+        <div class="ui-option-background">
+            <h2>Welcome To The Prototype!</h2>
+            <form action="/loginpage" method="POST">
+                <button type="submit">Login</button>
+            </form>
+            <form action="/createacct" method="POST">
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </body>
+</html>
